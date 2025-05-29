@@ -3,11 +3,11 @@
 
 # SANSA: Unleashing the Hidden Semantics in SAM2 for Few-Shot Segmentation
 
-📄 **[arXiv Preprint (2025)]()**  
+📄 **[arXiv Preprint](https://arxiv.org/abs/2505.21795)**  
 [Claudia Cuttano](https://scholar.google.it/citations?user=W7lNKNsAAAAJ&hl=en), [Gabriele Trivigno](https://scholar.google.com/citations?user=JXf_iToAAAAJ&hl=en), [Giuseppe Averta](https://scholar.google.it/citations?user=i4rm0tYAAAAJ&hl=en), [Carlo Masone](https://scholar.google.it/citations?user=cM3Iz_4AAAAJ&hl=en)
 </div>
 
-Welcome to the official repository for **SANSA**, our paper: *"SANSA: Unleashing the Hidden Semantics in SAM2 for Few-Shot Segmentation."*
+Welcome to the official repository for **SANSA**, our paper: *"SANSA: Unleashing the Hidden Semantics in SAM2 for Few-Shot Segmentation"*.
 
 
 https://github.com/user-attachments/assets/013be54f-aaec-4e31-b670-ba053f9f9bb0
