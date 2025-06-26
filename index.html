@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="SANSA: Unleashing the Hidden Semantics in SAM2 for Few-Shot Segmentation">
+  <meta name="keywords" content="Few Shot Segmentation, SANSA, Segment Anything, SAM, SAM2, SAMWISE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SANSA: Unleashing the Hidden Semantics in SAM2 for Few-Shot Segmentation</title>
+    <!-- Bootstrap -->
+
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-66HSRW52BL"></script> -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-66HSRW52BL');
+    </script>
+
+    <link href="static/css/bootstrap-4.4.1.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/index_mg.css">
+
+  <link rel="icon" href="./static/images/logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop" style = 'max-width:1080px'>
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <img src="static/images/logo.png" alt="Paper Logo" class="paper-logo">
+          <div class="title-container">
+          <h1 class="title is-1 publication-title">SANSA: Unleashing the Hidden Semantics in SAM2 for Few-Shot Segmentation</h1>
+          </div>
+          <div class="is-size-5 publication-authors">
+          <h2 class="subtitle is-3"> </h2>
+        <span class="author-block">
+          <a href="https://scholar.google.it/citations?user=W7lNKNsAAAAJ&hl=en">Claudia Cuttano*</a></span>,
+        <span class="author-block">
+          <a href="https://scholar.google.com/citations?user=JXf_iToAAAAJ&hl=en">Gabriele Trivigno*</a>,</span>
+        <span class="author-block">
+          <a href="https://scholar.google.it/citations?user=i4rm0tYAAAAJ&hl=en">Giuseppe Averta</a>,
+        </span>
+        <span class="author-block">
+          <a href="https://scholar.google.it/citations?user=cM3Iz_4AAAAJ&hl=en">Carlo Masone</a>,
+        </span>
+      </div>
+
+  <div class="is-size-5 publication-authors">
+    <span class="author-block"><strong>*</strong> Equal contribution</span>
+  </div>
+    <div class="is-size-5 publication-authors">
+      <span class="author-block">Politecnico di Torino</span>
+    </div>
+    <div class="is-size-5 publication-authors">
+    <span class="author-block">
+    <small><tt>claudia.cuttano@polito.it</tt></small>
+
+    </span>
+    </div>
+          <div class="column has-text-centered">
+                <span class="link-block">
+                    <a href="https://arxiv.org/pdf/2505.21795" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                    </a>
+                </span>
+              <span class="link-block">
+                <a href=https://arxiv.org/abs/2505.21795
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+            <span class="link-block">
+                <a class="external-link button is-normal is-rounded is-dark coming-soon">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Demo</span>
+                </a>
+            </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/ClaudiaCuttano/SANSA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="hero-body" style="padding-inline: 4vh">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-eight-fifths">
+          <p class="subtitle is-5 has-text-centered">
+            <strong>SANSA</strong> supports a <strong> wide range of prompts</strong>, including points, boxes, scribbles, and masks. <br>
+
+            Given one or more reference images, it <strong> segments semantically corresponding objects </strong> in the target. <br>
+
+            The entire process runs in a <strong> unified pipeline </strong>, with no prompt-specific adjustments or external models.
+          </p>
+        </div>
+      </div>
+      <video id="teaser" autoplay muted loop playsinline style="width: 100%; height: auto;">
+        <source src="./static/videos/video_four.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+              Few-shot segmentation aims to segment unseen object categories from just a handful of annotated
+          examples. This requires mechanisms that can both identify semantically related objects across
+          images and accurately produce segmentation masks. We note that Segment Anything 2 (SAM2), with
+          its prompt-and-propagate mechanism, offers both strong segmentation capabilities and a built-in
+          feature matching process. However, we show that <b> SAM2 representations are entangled with
+          task-specific cues optimized for object tracking, which impairs its use for tasks requiring
+          higher level semantic understanding. Our key insight is that, despite its class-agnostic
+          pretraining, SAM2 already encodes rich semantic structure in its features. We propose SANSA
+          (Semantically AligNed Segment Anything 2), a framework that makes this latent structure explicit </b>,
+          and repurposes SAM2 for few-shot segmentation through minimal task-specific modifications.
+          <b> SANSA achieves state-of-the-art performance on few-shot segmentation benchmarks specifically designed to
+          assess generalization, outperforms generalist methods in the popular in-context setting, supports various
+          prompts flexible interaction via points, boxes, or scribbles, and remains significantly faster and more
+          compact than prior approaches. </b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!--/ Abstract. -->
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Bibtex</h2>
+    <pre><code>@misc{cuttano2025sansa,
+      title   = {SANSA: Unleashing the Hidden Semantics in SAM2 for Few-Shot Segmentation},
+      author  = {Claudia Cuttano and Gabriele Trivigno and Giuseppe Averta and Carlo Masone},
+      year    = {2025},
+      eprint  = {2505.21795},
+      url     = {https://arxiv.org/abs/2505.21795},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+    <p>
+      This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed under a
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License </a>.
+    </p>
+  </div>
+</section>
+</footer>
+
+</body>
+</html>
