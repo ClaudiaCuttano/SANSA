@@ -1,0 +1,16 @@
+--index-url https://download.pytorch.org/whl/cu126
+--extra-index-url https://pypi.org/simple
+torch==2.7.1
+torchvision==0.22.1 
+hydra-core==1.3.2
+scipy==1.15.3
+matplotlib==3.10.6
+pycocotools==2.0.10
+einops
+tqdm
+py3_wget
+## demo
+opencv-python==4.12.0.88
+jupyter
+jupyter_contrib_nbextensions==0.7.0
+ipympl==0.9.7
