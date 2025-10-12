@@ -5,17 +5,19 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2505.21795" title="Read the paper on arXiv">
-    <img src="https://img.shields.io/badge/arXiv-2505.21795-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv">
+    <img src="https://img.shields.io/badge/arXiv-2505.21795-b31b1b?style=flat-square&logo=arxiv&logoColor=white"
+         alt="arXiv" style="vertical-align: middle;">
   </a>
-  &nbsp;
   <a href="https://claudiacuttano.github.io/SANSA/" title="Open the project page">
-    <img src="https://img.shields.io/badge/Project-Page-blue" alt="Project Page">
+    <img src="https://img.shields.io/badge/Project-Page-blue"
+         alt="Project Page" style="vertical-align: middle;">
   </a>
-  &nbsp;
-  <a href="https://colab.research.google.com/github/ClaudiaCuttano/SANSA/blob/main/notebooks/SANSA_Unifies_Demo.ipynb" title="Open in Google Colab">
-    <img src="https://img.shields.io/badge/Colab-Open-F9AB00?style=flat-square&logo=googlecolab&logoColor=white" alt="Open in Colab">
+  <a href="https://colab.research.google.com/github/ClaudiaCuttano/SANSA/blob/main/sansa_demo.ipynb" title="Open in Google Colab">
+    <img src="https://img.shields.io/badge/Colab-Open-F9AB00?style=flat-square&logo=googlecolab&logoColor=white"
+         alt="Open in Colab" style="vertical-align: middle;">
   </a>
 </p>
+
 
 
 [Claudia Cuttano*](https://scholar.google.it/citations?user=W7lNKNsAAAAJ&hl=en) ·
@@ -32,6 +34,10 @@ SANSA unlocks the hidden semantics of **Segment Anything 2**, turning it into a 
 🧠️ **Fully promptable: points · boxes · scribbles · masks, making it ideal for real-world labeling**.  
 📈 **State-of-the-art on few-shot object & part segmentation benchmarks.**  
 ⚡ **Lightweight: 3–5× faster, 4–5× smaller!**  
+
+
+https://github.com/user-attachments/assets/b8c81a27-d8d5-496d-ae3e-eaefd5a7cf90
+
 
 
 
@@ -61,12 +67,12 @@ In this repository, you will find:
 ## 1. SANSA Universal Model 🌐
 _Run on your own data (objects & parts, promptable with points · boxes · scribbles · masks)._
 
-#### Quick Links: 📥 **[Download Weights](https://drive.google.com/file/d/1nPOdRfMfo3MQRSi1qkPEri7Gl6FCEVHe)** · 🧑‍💻 **[Interactive Notebook](sansa_demo.ipynb)** · 📦 **TorchHub** (Coming Soon)  
+#### Quick Links: 📥 **[Download Weights](https://drive.google.com/file/d/1nPOdRfMfo3MQRSi1qkPEri7Gl6FCEVHe)** · 🧑‍💻 **[Interactive Notebook](https://colab.research.google.com/github/ClaudiaCuttano/SANSA/blob/main/sansa_demo.ipynb)** · 📦 **TorchHub** (Coming Soon)  
 
 ---
 
 ### 🧑‍💻 Interactive Demo (Colab)  
-Curious about SANSA? The **[Notebook](SANSA_demo.ipynb)** lets you try it out. Mark **an object or part in one image** (point, box, scribble, or mask), and SANSA will segment the same class in the following images.   
+Curious about SANSA? The **[Notebook](https://colab.research.google.com/github/ClaudiaCuttano/SANSA/blob/main/sansa_demo.ipynb)** lets you try it out. Mark **an object or part in one image** (point, box, scribble, or mask), and SANSA will segment the same class in the following images.   
 💡 Example: draw a quick box around a car, and SANSA finds the cars in the next images.  
 
 <p align="center">
