@@ -16,6 +16,7 @@ class DatasetISIC(Dataset):
         self.split = 'test' if split in ['val', 'test'] else 'trn'
         self.benchmark = 'isic'
         self.shot = shot
+        self.nclass = 3
         if self.split == 'test':
             self.num = num
             self.categories = ['1','2','3']

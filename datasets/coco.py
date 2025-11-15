@@ -52,11 +52,13 @@ class DatasetCOCO(Dataset):
         support_masks = torch.stack(support_masks)
         base_supports = torch.stack(base_supports)
 
-        batch = {'query_img': query_img,
-                 'query_mask': query_mask,
-                 'support_imgs': support_imgs,
-                 'support_masks': support_masks,
-                 'base_masks':[base_supports,base_query]
+        batch = {
+            'query_img': query_img,
+            'query_mask': query_mask,
+            'support_imgs': support_imgs,
+            'support_masks': support_masks,
+            'base_masks':[base_supports,base_query],
+            'class_id': torch.tensor(class_sample)
         }
         return batch
 

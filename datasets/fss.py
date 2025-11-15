@@ -16,7 +16,7 @@ class DatasetFSS(Dataset):
         self.split = split
         self.benchmark = 'fss'
         self.shot = shot
-
+        self.nclass = 1000
         self.base_path = os.path.join(datapath, 'FSS-1000/data')
 
         # Given predefined test split, load randomly generated training/val splits:
@@ -47,15 +47,15 @@ class DatasetFSS(Dataset):
             support_masks_tmp.append(smask)
         support_masks = torch.stack(support_masks_tmp)
 
-        batch = {'query_img': query_img,
-                 'query_mask': query_mask,
-                 'query_name': query_name,
-
-                 'support_imgs': support_imgs,
-                 'support_masks': support_masks,
-                 'support_names': support_names,
-
-                 'class_id': torch.tensor(class_sample)}
+        batch = {
+            'query_img': query_img,
+            'query_mask': query_mask,
+            'query_name': query_name,
+            'support_imgs': support_imgs,
+            'support_masks': support_masks,
+            'support_names': support_names,
+            'class_id': torch.tensor(class_sample)
+        }
         if self.split == 'test':
             batch['class_name'] = self.categories[class_sample-760]
         return batch

@@ -15,7 +15,8 @@ class DatasetPASCALPart(Dataset):
         self.split = 'val' if split in ['val', 'test'] else 'train'
         self.cat = ['animals', 'indoor', 'person', 'vehicles'][fold]
         print(f"{fold}: {self.cat}")
-        # self.nfolds = 4
+        self.nfolds = 4
+        self.nclass = 100
         self.benchmark = 'pascal_part'
         self.shot = shot
         self.transform = transform

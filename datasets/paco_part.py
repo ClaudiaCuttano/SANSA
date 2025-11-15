@@ -59,11 +59,12 @@ class DatasetPACOPart(Dataset):
             support_masks[midx] = F.interpolate(smask.unsqueeze(0).unsqueeze(0).float(), support_imgs.size()[-2:], mode='nearest').squeeze()
         support_masks = torch.stack(support_masks)
 
-        batch = {'query_img': query_img,
-                 'query_mask': query_mask,
-
-                 'support_imgs': support_imgs,
-                 'support_masks': support_masks,
+        batch = {
+            'query_img': query_img,
+            'query_mask': query_mask,
+            'support_imgs': support_imgs,
+            'support_masks': support_masks,
+            'class_id': torch.tensor(self.class_ids_c[class_sample])
         }
 
         return batch
